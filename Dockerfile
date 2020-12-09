@@ -10,5 +10,5 @@ apt-get install -y php5-curl && \
 rm -rf /var/lib/apt/lists/* && \
 rm -rf /var/www/html/index.html
 COPY . /var/www/html/
-EXPOSE 80
+#EXPOSE 80
 CMD apachectl -D FOREGROUND

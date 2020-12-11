@@ -1,4 +1,5 @@
-FROM ubuntu:14.04
+#FROM ubuntu:14.04
+FROM ubuntu:trusty-20191217
 
 RUN sudo apt-get update && \
 sudo apt-get install -y apache2  && \

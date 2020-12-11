@@ -9,12 +9,12 @@ apt-get install -y php5-mysqlnd && \
 rm -rf /var/lib/apt/lists/* && \
 rm -rf /var/www/html/index.html && \
 echo "ServerName localhost" >> /etc/apache2/sites-enabled/000-default.conf && \
-echo "<Directory /var/www/html/>" >> /etc/apache2/sites-enabled/000-default.conf && \
-echo "Options Indexes FollowSymLinks MultiViews" >> /etc/apache2/sites-enabled/000-default.conf && \
-echo "AllowOverride All" >> /etc/apache2/sites-enabled/000-default.conf && \
-echo "Order allow,deny" >> /etc/apache2/sites-enabled/000-default.conf && \
-echo "allow from all" >> /etc/apache2/sites-enabled/000-default.conf && \
-echo "</Directory>" >> /etc/apache2/sites-enabled/000-default.conf
+#echo "<Directory /var/www/html/>" >> /etc/apache2/sites-enabled/000-default.conf && \
+#echo "Options Indexes FollowSymLinks MultiViews" >> /etc/apache2/sites-enabled/000-default.conf && \
+#echo "AllowOverride All" >> /etc/apache2/sites-enabled/000-default.conf && \
+#echo "Order allow,deny" >> /etc/apache2/sites-enabled/000-default.conf && \
+#echo "allow from all" >> /etc/apache2/sites-enabled/000-default.conf && \
+#echo "</Directory>" >> /etc/apache2/sites-enabled/000-default.conf
 COPY . /var/www/html/
 EXPOSE 80
 CMD sudo apachectl -D FOREGROUND

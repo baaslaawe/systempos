@@ -10,7 +10,8 @@ sudo apt-get install -y libapache2-mod-php5 && \
 sudo apt-get install -y wget && \
 sudo rm -rf /var/lib/apt/lists/* && \
 sudo rm -rf /var/www/html/index.html && \
-echo "ServerName localhost" >> /etc/apache2/sites-enabled/000-default.conf
+echo "ServerName localhost" >> /etc/apache2/sites-enabled/000-default.conf && \
+echo CustomLog "/dev/stdout" access_log
 
 # Instana Agent Setup 
 ENV INSTANA_ZONE=CodeIgniter

@@ -1,5 +1,5 @@
 #FROM ubuntu:14.04
-FROM ubuntu:trusty-20191217
+FROM 367794562090.dkr.ecr.us-west-2.amazonaws.com/ubuntu
 
 RUN sudo apt-get update && \
 sudo apt-get install -y apache2  && \
@@ -17,17 +17,17 @@ echo "*               hard    nofile          8192" >> /etc/security/limits.conf
 echo CustomLog "/dev/stdout" access_log
 
 # Instana Agent Setup 
-ENV INSTANA_ZONE=CodeIgniter
-ENV INSTANA_SERVICE_NAME=CodeIgniter
-ENV INSTANA_AGENT_ENDPOINT=ingress-orange-saas.instana.io
-ENV INSTANA_AGENT_ENDPOINT_PORT=443
-ENV INSTANA_AGENT_KEY=6ETjMarMTE2mpeVrZCKA6w
+#ENV INSTANA_ZONE=CodeIgniter
+#ENV INSTANA_SERVICE_NAME=CodeIgniter
+#ENV INSTANA_AGENT_ENDPOINT=ingress-orange-saas.instana.io
+#ENV INSTANA_AGENT_ENDPOINT_PORT=443
+#ENV INSTANA_AGENT_KEY=6ETjMarMTE2mpeVrZCKA6w
 
-RUN wget -q -O /tmp/instana-agent-static.deb "https://_:6ETjMarMTE2mpeVrZCKA6w@packages.instana.io/agent/deb/dists/generic/main/binary-amd64/instana-agent-static_20201211-0308_amd64.deb" && \
-	dpkg -i /tmp/instana-agent-static.deb && \
-	rm -f /tmp/instana-agent-static.deb
+#RUN wget -q -O /tmp/instana-agent-static.deb "https://_:6ETjMarMTE2mpeVrZCKA6w@packages.instana.io/agent/deb/dists/generic/main/binary-amd64/instana-agent-static_20201211-0308_amd64.deb" && \
+#	dpkg -i /tmp/instana-agent-static.deb && \
+#	rm -f /tmp/instana-agent-static.deb
 
-COPY configuration-a.yaml /opt/instana/agent/etc/instana
+#COPY configuration-a.yaml /opt/instana/agent/etc/instana
 COPY entrypoint.sh /
 #RUN chmod 755 /entrypoint.sh
 

@@ -14,6 +14,7 @@
 #RUN /etc/init.d/php5.6-fpm restart && /etc/init.d/nginx start
 #RUN /etc/init.d/nginx start
 FROM vikas027/alpine-nginx-php
+COPY default.conf /etc/nginx/conf.d/
 COPY . /usr/share/nginx/html
 #RUN sudo apt-get install software-properties-common && \
 #RUN sudo rm -rf /var/www/app/index.php

@@ -18,4 +18,3 @@ COPY . /www/html/
 #RUN sudo apt-get install software-properties-common && \
 #RUN sudo rm -rf /var/www/app/index.php
 #sudo add-apt-repository ppa:ondrej/php && \
-#sudo apt-get install -y php5.6-curl

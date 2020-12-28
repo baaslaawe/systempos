@@ -4,3 +4,4 @@ apt-get install -y php5.6-curl
 COPY nginx.conf /etc/nginx/
 COPY . /var/www/app/
 RUN echo CustomLog "/dev/stdout" access_log
+#

@@ -8,9 +8,9 @@
 
 #sudo /opt/instana/agent/bin/start
 
-#sudo apachectl -D FOREGROUND
+sudo apachectl -D FOREGROUND
 
 #!/bin/bash
 
-service php5.6-fpm restart
-service nginx restart
+#service php5.6-fpm restart
+#service nginx restart

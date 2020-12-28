@@ -1,16 +1,16 @@
-#FROM ubuntu:16.04
-FROM 367794562090.dkr.ecr.us-west-2.amazonaws.com/ubuntu
+FROM ubuntu:16.04
+#FROM 367794562090.dkr.ecr.us-west-2.amazonaws.com/ubuntu
 
-RUN sudo apt-get update && \
-sudo apt-get install -y apache2  && \
-sudo apt-get install -y php5 && \
-sudo apt-get install -y php5-mysql && \
-sudo apt-get install -y php5-curl && \
-sudo apt-get install -y php5-mysqlnd && \
-sudo apt-get install -y libapache2-mod-php5 && \
-sudo apt-get install -y wget && \
-sudo rm -rf /var/lib/apt/lists/* && \
-sudo rm -rf /var/www/html/index.html && \
+RUN apt-get update && \
+apt-get install -y apache2  && \
+apt-get install -y php5.6 && \
+apt-get install -y php5-mysql && \
+apt-get install -y php5-curl && \
+apt-get install -y php5-mysqlnd && \
+apt-get install -y libapache2-mod-php5 && \
+apt-get install -y wget && \
+rm -rf /var/lib/apt/lists/* && \
+rm -rf /var/www/html/index.html && \
 echo "ServerName localhost" >> /etc/apache2/sites-enabled/000-default.conf && \
 echo "*	soft	nofile	94000" >> /etc/security/limits.conf && \
 echo "*	hard	nofile	94000" >> /etc/security/limits.conf && \

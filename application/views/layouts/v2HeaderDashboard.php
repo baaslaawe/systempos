@@ -33,7 +33,7 @@
     $cimagenes =&get_instance();
     $cimagenes->load->model('crm_imagenes_model');
     $imagenes = $cimagenes->crm_imagenes_model->imagenes();
-    if(count($imagenes) > 0)
+    if(count($imagenes) > 0 && empty($this->session->userdata('new_imagenes')))
         $this->session->set_userdata('new_imagenes',$imagenes);
 ?>
 

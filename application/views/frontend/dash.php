@@ -1,5 +1,7 @@
 <?php
 
+die("debug");
+
 $resultPermisos = getPermisos();
 $permisos = $resultPermisos["permisos"];
 $isAdmin = $resultPermisos["admin"];

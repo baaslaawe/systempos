@@ -32,7 +32,7 @@
 
 //$config['base_url']	= 'http://200.93.191.182/sima';
 
-$config['base_url']	= '';
+$config['base_url']	= 'index.php';
 
 
 

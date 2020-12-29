@@ -56,7 +56,7 @@ $config['base_url']	= '';
 
 */
 
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 //$config['url_shop'] = 'http://vendty.com/tienda/index.php/';
 $config['url_shop'] = 'http://vendty.com/tienda/index.php/';

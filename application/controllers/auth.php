@@ -4309,14 +4309,14 @@ Si usted ya no desea recibir mas mensajes de correo electr&#65533;nico desde inf
 
                         //print_r($this->session->userdata);
                         //die();
-                        redirect("frontend/indexprueba");
+                        redirect("frontend/index");
                         // Envio variable NEW para identificar que viene desde el login
                         // Con esto valido si se va para el form wizard o no
 
                     }
                     if ($admin == 'f' || $admin == 'a' || $admin == 's') {
 
-                        redirect("frontend/indexprueba");
+                        redirect("frontend/index");
 
                     }
 

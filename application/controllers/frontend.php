@@ -499,10 +499,6 @@ class Frontend extends CI_Controller
 
     //----------------------------------------------------------------------------------
     //----------------------------------------------------------------------------------
-    public function indexprueba($estado = "")
-    {
-        die("debug");
-    }
     public function index($estado = "")
     {
 

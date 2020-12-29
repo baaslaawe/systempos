@@ -32,7 +32,7 @@
 
 //$config['base_url']	= 'http://200.93.191.182/sima';
 
-$config['base_url']	= 'index.php';
+$config['base_url']	= '';
 
 
 
@@ -56,7 +56,7 @@ $config['base_url']	= 'index.php';
 
 */
 
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 //$config['url_shop'] = 'http://vendty.com/tienda/index.php/';
 $config['url_shop'] = 'http://tienda.localhost/index.php/';

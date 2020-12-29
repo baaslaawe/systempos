@@ -30,10 +30,11 @@
     //$offline= 'false';
 
     //imagenes a utilizar
-    /*$cimagenes =&get_instance();
+    $cimagenes =&get_instance();
     $cimagenes->load->model('crm_imagenes_model');
-    $imagenes=$cimagenes->crm_imagenes_model->imagenes();
-    $this->session->set_userdata('new_imagenes',$imagenes);*/
+    $imagenes = $cimagenes->crm_imagenes_model->imagenes();
+    if(count($imagenes) > 0)
+        $this->session->set_userdata('new_imagenes',$imagenes);
 ?>
 
 <!DOCTYPE html>

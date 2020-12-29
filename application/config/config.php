@@ -511,6 +511,9 @@ $config['sess_matcch_useragent']	= TRUE;
 
 $config['sess_time_to_update']	= 300;
 
+$config['sess_save_path']	= APPPATH . 'cache/sessions/';
+
+
 
 
 /*

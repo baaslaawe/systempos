@@ -6,7 +6,7 @@
             <?php if (( in_array("11", $permisos ) || $isAdmin == 't' )&& ($this->session->userdata('es_estacion_pedido')!=1)) { ?>
             <li class="site-menu-item menu-items" style=" margin-top: 0px;">
                 <a href="<?php echo site_url("ventas/nuevo"); ?>">
-                    <center><img alt="vender" class="iconimg" src="<?php echo base_url('/uploads/iconos/Blanco/'); ?>/icono_blanco-05.svg"></center>                               
+                    <center><img alt="vender" class="iconimg" src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Blanco/icono_blanco-05.svg"></center>                               
                     <center class="menu-title">Vender</center>
                 </a>
             </li>
@@ -15,7 +15,7 @@
             <?php if(($this->session->userdata('es_estacion_pedido')!=1)&&( in_array("10", $permisos ) || in_array("1037", $permisos ) || in_array("11", $permisos ) || in_array("66", $permisos ) || in_array("69", $permisos ) || in_array("27", $permisos ) || in_array("1024", $permisos ) || (in_array("1022", $permisos ) && $comanda["comanda"] == "si") || $isAdmin == 't')){ ?>
             <li class="site-menu-item has-sub  menu-items">
                 <a href="javascript:void(0)">
-                    <center><img alt="ventas" class="iconimg" src="<?php echo base_url('/uploads/iconos/Blanco/'); ?>/icono_blanco-06.svg"></center>
+                    <center><img alt="ventas" class="iconimg" src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Blanco/icono_blanco-06.svg"></center>
                     <center class="menu-title">Ventas</center>
                 </a>
                 <ul class="site-menu-sub">
@@ -112,7 +112,7 @@
             <?php if(($this->session->userdata('es_estacion_pedido')!=1)&&( in_array("2", $permisos ) || in_array("14", $permisos ) || in_array("67", $permisos ) || in_array("68", $permisos ) || in_array("1036", $permisos ) || $isAdmin == 't')){ ?>
             <li class="site-menu-item has-sub  menu-items">
                 <a href="javascript:void(0)">
-                    <center><img alt="inventario" class="iconimg" src="<?php echo base_url('/uploads/iconos/Blanco/'); ?>/icono_blanco-07.svg"></center>
+                    <center><img alt="inventario" class="iconimg" src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Blanco/icono_blanco-07.svg"></center>
                     <center class="menu-title">Inventario</center>
                 </a>
                 <ul class="site-menu-sub">
@@ -163,7 +163,7 @@
             </li>
             <li class="site-menu-item has-sub  menu-items">
                 <a href="javascript:void(0)">
-                    <center><img alt="fidelización" class="iconimg" src="<?php echo base_url('/uploads/iconos/Blanco/'); ?>/icono_blanco-08.svg"></center>
+                    <center><img alt="fidelización" class="iconimg" src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Blanco/icono_blanco-08.svg"></center>
                     <center class="menu-title">Fidelización</center>
                 </a>
                 <ul class="site-menu-sub">
@@ -193,7 +193,7 @@
             <?php if(($this->session->userdata('es_estacion_pedido')!=1)&&(in_array("58", $permisos ) || in_array("70", $permisos ) || in_array("71", $permisos ) || $isAdmin == 't')){ ?>
             <li class="site-menu-item has-sub  menu-items">
                 <a href="javascript:void(0)">
-                    <center><img alt="compras" class="iconimg" src="<?php echo base_url('/uploads/iconos/Blanco/'); ?>/icono_blanco-09.svg"></center>
+                    <center><img alt="compras" class="iconimg" src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Blanco/icono_blanco-09.svg"></center>
                     <center class="menu-title">Compras</center>
                 </a>
                 <ul class="site-menu-sub">
@@ -242,7 +242,7 @@
             <?php if(($this->session->userdata('es_estacion_pedido')!=1)&&(in_array("32", $permisos ) || in_array("45", $permisos ) || in_array("62", $permisos ) || $isAdmin == 't')){ ?>
             <li class="site-menu-item has-sub  menu-items">
                 <a href="javascript:void(0)">
-                    <center><img alt="Contactos" class="iconimg" src="<?php echo base_url('/uploads/iconos/Blanco/'); ?>/icono_blanco-10.svg"></center>
+                    <center><img alt="Contactos" class="iconimg" src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Blanco/icono_blanco-10.svg"></center>
                     <center class="menu-title">Contactos</center>
                 </a>
                 <ul class="site-menu-sub">
@@ -286,7 +286,7 @@
             <?php if(($this->session->userdata('es_estacion_pedido')!=1) && (in_array("1", $permisos ) || $isAdmin == 't')){ ?>
             <li class="site-menu-item  menu-items">
                 <a href="<?php echo site_url("informes"); ?>">
-                    <center><img alt="informes" class="iconimg" src="<?php echo base_url('/uploads/iconos/Blanco/'); ?>/icono_blanco-32.svg"></center>
+                    <center><img alt="informes" class="iconimg" src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Blanco/icono_blanco-32.svg"></center>
                     <center class="menu-title">Informes</center>
                 </a>
             </li>
@@ -297,7 +297,7 @@
                     <li class="site-menu-item  menu-items">
                         <a id="admin_shop" href="javascript:void(0);">
                             <center>
-                                <img alt="tienda" class="iconimg" src="<?php echo base_url('/uploads/iconos/svg/003-mobile-purchase.svg'); ?>">
+                                <img alt="tienda" class="iconimg" src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/svg/003-mobile-purchase.svg">
                             </center>
                             <center class="menu-title">Tienda</center>
                         </a>

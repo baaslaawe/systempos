@@ -148,18 +148,18 @@
     }
 ?>
 
-    <?php if(isset($decode_session->license) && $decode_session->license->plan->dias_vigencia == 30 && $decode_session->license->plan->id != 53 && $decode_session->license->plan->id != 68):?>
-        <div id="message-webinar" class="message-webinar_bd_black">
-            <p class="text-center">
-                <i class="fa fa-tag" aria-hidden="true"></i>
-                [BLACK FRIDAY] Ahórrate 6 Meses Pasándote al Plan Anual <a style="font-weight:initial" href="https://vendty.com/registro-black-friday/"
-                                                                        target="_blank">Obtener Oferta</a>
-            </p>
-        </div>
-    <?php else :*/?>
-        <div id="message-webinar"></div>
-    <?php //endif; ?>
-   <!-- <a href="javascript:void(0)" class="close-message-webinar">x</a> -->
+<?php if(isset($decode_session->license) && $decode_session->license->plan->dias_vigencia == 30 && $decode_session->license->plan->id != 53 && $decode_session->license->plan->id != 68):?>
+<div id="message-webinar" class="message-webinar_bd_black">
+    <p class="text-center">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        [BLACK FRIDAY] Ahórrate 6 Meses Pasándote al Plan Anual <a style="font-weight:initial"
+            href="https://vendty.com/registro-black-friday/" target="_blank">Obtener Oferta</a>
+    </p>
+</div>
+<?php else :*/?>
+<div id="message-webinar"></div>
+<?php //endif; ?>
+<!-- <a href="javascript:void(0)" class="close-message-webinar">x</a> -->
 
 <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
     <li id="notification" style="cursor: pointer;width: 50px;" class="path">
@@ -169,7 +169,7 @@
     <li data-drop-menu="drop-menu-header" class="path">
         <div class="avatar">
             <img alt="user" class="iconimg" style="width:60% !important;position: absolute;left:0;top:-1px;"
-                src="http://pos.vendty.com/uploads/iconos/Gris/icono_gris-13.svg">
+                src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Gris/icono_gris-13.svg">
         </div>
         <?php echo $this->session->userdata('username'); ?> <span class="caret"></span>
         <ul class="drop-menu-header">
@@ -193,7 +193,7 @@
             <li>
                 <a href="<?php echo base_url("index.php/frontend/configuracion") ?>">
                     <img title="Configuración" alt="Configuración" class="iconimg"
-                        src="<?= base_url('uploads/iconos/Verde/iconos%20vendty_Configuracion.svg') ?>">
+                        src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Verde/iconos%20vendty_Configuracion.svg">
                     Configuración
                 </a>
             </li>
@@ -248,7 +248,7 @@
         $('#beamerSelector').trigger('click');
     });
 
-    $(".close-message-webinar").click(function(){
+    $(".close-message-webinar").click(function () {
         $("#message-webinar").hide();
     });
 </script>

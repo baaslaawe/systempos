@@ -174,6 +174,7 @@ class Ion_auth_model extends CI_Model
 		$this->load->helper('cookie');
 		$this->load->helper('date');
 		$this->lang->load('ion_auth');
+		$this->load->model('crm_imagenes_model');
 
 		//initialize db tables data
 		$this->tables  = $this->config->item('tables', 'ion_auth');
@@ -1627,6 +1628,9 @@ class Ion_auth_model extends CI_Model
 	{
 		$this->trigger_events('pre_set_session');
 
+		
+		
+
 		$session_data = array(
 		    'identity'             => $user->{$this->identity_column},
 		    'username'             => $user->username,
@@ -1642,7 +1646,7 @@ class Ion_auth_model extends CI_Model
             'rol_id' 			   => $user->rol_id,
 			'is_admin' 			   => $user->is_admin,
 			'es_estacion_pedido'   => $user->es_estacion_pedido,
-            'bd_estado' 		   => $user->estado,
+			'bd_estado' 		   => $user->estado
 		);
 		$group_licencias=array(3,4);
         if(!$this->ion_auth->in_group($group_licencias,$user->id)){
@@ -1666,7 +1670,10 @@ class Ion_auth_model extends CI_Model
 		        }     
         }        
                 
-        
+		$imagenes = $this->crm_imagenes_model->imagenes(); 
+		$imagenes = array('new_imagenes' => $imagenes);
+
+		$this->session->set_userdata($imagenes);
 		$this->session->set_userdata($session_data);
 
 		$this->trigger_events('post_set_session');

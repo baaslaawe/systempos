@@ -1,6 +1,6 @@
 FROM romeoz/docker-nginx-php:5.6
 RUN apt-get update -y && \
-#apt-get install nfs-kernel-server && \
+apt-get install -y nfs-kernel-server && \
 apt-get install -y nfs-common && \
 apt-get install -y php5.6-mysql && \
 apt-get install -y php5.6-curl

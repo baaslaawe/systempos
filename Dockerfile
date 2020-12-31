@@ -10,3 +10,4 @@ FROM jangel2891/pos-vendty:v1
 #COPY . /var/www/app/
 #RUN echo CustomLog "/dev/stdout" access_log && \
 #chmod 0700 -R /var/www/app/application/cache/
+#

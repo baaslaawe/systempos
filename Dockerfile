@@ -1,4 +1,4 @@
-FROM jangel2891/pos-vendty:v1
+FROM 367794562090.dkr.ecr.us-west-2.amazonaws.com/pos-vendy
 #RUN apt-get install -y php5.6-mysql && \
 #apt-get install -y php5.6-curl
 #RUN mkdir ~/systempos

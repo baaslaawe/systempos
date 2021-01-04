@@ -267,7 +267,7 @@ if (!empty($this->session->flashdata('error')) && $this->session->flashdata('err
                 <div class="panel panel-default no-padding no-margin tab_config tab_config">
                     <div class="panel-heading">
                         <div class="panel-title">
-                            <img alt="Configuración inicial"  src="<?php echo base_url('/uploads/iconos/Negro/'); ?>/icono_negro-12.svg">
+                            <img alt="Configuración inicial"  src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Negro/icono_negro-12.svg">
                             <a data-toggle="collapse" href="#collapseOne" data-parent="#configuration">
                                 Configuracion inicial
                             </a>
@@ -287,7 +287,7 @@ if (!empty($this->session->flashdata('error')) && $this->session->flashdata('err
                 <div class="panel panel-default no-padding no-margin tab_config">
                     <div class="panel-heading">
                         <div class="panel-title">
-                            <img alt="Usuarios"  src="<?php echo base_url('/uploads/iconos/Negro/'); ?>/icono_negro-13.svg">
+                            <img alt="Usuarios"  src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Negro/icono_negro-13.svg">
                             <a data-toggle="collapse" data-action="collapse" href="#collapseTwo">
                                 Usuarios del Sistema
                             </a>
@@ -303,7 +303,7 @@ if (!empty($this->session->flashdata('error')) && $this->session->flashdata('err
                 <div class="panel panel-default no-padding no-margin tab_config">
                     <div class="panel-heading">
                         <div class="panel-title">
-                            <img alt="Almacenes"  src="<?php echo base_url('/uploads/iconos/Negro/'); ?>/icono_negro-14.svg">
+                            <img alt="Almacenes"  src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Negro/icono_negro-14.svg">
                             <a data-toggle="collapse" href="#collapseThree">
                                 Almacenes
                             </a>
@@ -322,7 +322,7 @@ if (!empty($this->session->flashdata('error')) && $this->session->flashdata('err
                  <div class="panel panel-default no-padding no-margin tab_config">
                     <div class="panel-heading">
                         <div class="panel-title">
-                            <img alt="Importaciones"  src="<?php echo base_url('/uploads/iconos/Negro/'); ?>/icono_negro-15.svg">
+                            <img alt="Importaciones"  src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Negro/icono_negro-15.svg">
                             <a data-toggle="collapse" href="#collapseFour">
                                 Importaciones
                             </a>
@@ -426,7 +426,7 @@ foreach ($data["opciones"] as $opcion) {
                                 <div class="panel panel-default no-padding no-margin tab_config">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <img alt="restaurante"  src="<?php echo base_url('/uploads/iconos/Negro/'); ?>/iconos vendty_Restaurantes.svg">
+                                            <img alt="restaurante"  src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Negro/iconos vendty_Restaurantes.svg">
                                             <a data-toggle="collapse" href="#collapseSix">
                                                 Restaurante
                                             </a>
@@ -468,7 +468,7 @@ foreach ($data["opciones"] as $opcion) {
                 <div class="panel panel-default no-padding no-margin tab_config">
                     <div class="panel-heading">
                         <div class="panel-title">
-                            <img alt="Woocommerce"  src="<?php echo base_url('/uploads/iconos/Negro/'); ?>/icono_negro-17.svg">
+                            <img alt="Woocommerce"  src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Negro/icono_negro-17.svg">
                             <a data-toggle="tab" href="#integraciones">
                                 Integraciones
                             </a>
@@ -487,7 +487,7 @@ if (($db_id != '8962') && ($db_id != '17911')) {?>
                 <div class="panel panel-default no-padding no-margin tab_config">
                     <div class="panel-heading">
                         <div class="panel-title">
-                            <img alt="Reiniciar"  src="<?php echo base_url('/uploads/iconos/Negro/'); ?>/icono_negro-17.svg">
+                            <img alt="Reiniciar"  src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Negro/icono_negro-17.svg">
                             <a href="<?php echo site_url('restablecer/index'); ?>">
                                 Reiniciar sistema
                             </a>
@@ -514,7 +514,7 @@ if (count($data['plan_cliente'])) {
 }
 ?>
                             <input id="plan_cliente_id" type="hidden"  value="<?php echo $tipo_cliente; ?>">
-                             <img alt="Licencias"  src="<?php echo base_url('/uploads/iconos/Negro/'); ?>/iconos vendty_Mis licencias.svg">
+                             <img alt="Licencias"  src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Negro/iconos vendty_Mis licencias.svg">
                             <a href="#tab-licencias" id="link_licencias" data-toggle="tab" >
                                 Mis Licencias
                             </a>

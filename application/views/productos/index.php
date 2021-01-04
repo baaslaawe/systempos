@@ -200,7 +200,7 @@
                            
                             var buttons = "<div class='btnacciones'>";
 
-                            buttons += '<a data-tooltip="Subir Imagen Principal" href="javascript:void(false);" data-product-id="'+ data +'"  class="button default acciones upload-first-image"><div class="icon"><img data-cambiar="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Blanco/icono_blanco-15.svg" data-original="/uploads/iconos/Gris/icono_gris-15.svg" alt="Editar" class="iconacciones" src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Gris/icono_gris-15.svg" ></div></a>';
+                            buttons += '<a data-tooltip="Subir Imagen Principal" href="javascript:void(false);" data-product-id="'+ data +'"  class="button default acciones upload-first-image"><div class="icon"><img data-cambiar="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Blanco/icono_blanco-15.svg" data-original="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Gris/icono_gris-15.svg" alt="Editar" class="iconacciones" src="https://vendty-img.s3-us-west-2.amazonaws.com/iconos/Gris/icono_gris-15.svg" ></div></a>';
 
                                 <?php if(in_array('4', $permisos) || $is_admin == 't'):?>
 

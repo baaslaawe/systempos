@@ -1,7 +1,7 @@
 FROM 367794562090.dkr.ecr.us-west-2.amazonaws.com/pos-vendy
 #RUN apt-get install -y php5.6-mysql && \
 #apt-get install -y php5.6-curl
-#RUN mkdir ~/systempos
+#RUN mkdir 
 
 #COPY app.conf /etc/nginx/sites-enabled/
 #COPY php.ini /etc/php/5.6/fpm/
@@ -10,4 +10,3 @@ FROM 367794562090.dkr.ecr.us-west-2.amazonaws.com/pos-vendy
 #COPY . /var/www/app/
 #RUN echo CustomLog "/dev/stdout" access_log && \
 RUN chmod 0700 -R /var/www/app/uploads/
-#

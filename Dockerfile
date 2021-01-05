@@ -9,4 +9,4 @@ FROM 367794562090.dkr.ecr.us-west-2.amazonaws.com/pos-vendy
 #COPY nginx.conf /etc/nginx/
 #COPY . /var/www/app/
 #RUN echo CustomLog "/dev/stdout" access_log && \
-RUN chmod 0700 -R /var/www/app/uploads/
+RUN chmod 0700 -R /var/www/app/uploads
